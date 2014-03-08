@@ -70,7 +70,7 @@ int main(int argc, char **argv)
         ret = read(fs, &c, 1);
         if (ret < 1)
         {
-            printf("nothing read (offset 0x%lX)\n");
+            printf("nothing read (offset 0x%lX)\n", i);
             break;
         }
         c = change(i, c);
